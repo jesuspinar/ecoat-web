@@ -2,19 +2,19 @@
 	{
 		"authorName": "Quique Segura Gisbert",
 		"authorRole": "Cliente",
-		"image": "/ecoat-web/testimonials/avatar-02.png",
+		"image": "/testimonials/avatar-02.png",
 		"message": "“ECOAT Consultores de Dénia la recomiendo al 100%. Ángeles es una excelente profesional con un trato personal magnífico que me explicó y resolvió perfectamente todas las dudas que le planteé. Sin duda es la mejor asesoría que he conocido con diferencia.”"
 	},
 	{
 		"authorName": "Jose Lizon",
 		"authorRole": "Cliente",
-		"image": "/ecoat-web/testimonials/avatar-01.png",
+		"image": "/testimonials/avatar-01.png",
 		"message": "“Realmente solo conoces una asesoría cuando hay complicaciones. En ECOAT solucionan problemas.”"
 	},
 	{
 		"authorName": "Javi López",
 		"authorRole": "Cliente",
-		"image": "/ecoat-web/testimonials/avatar-03.png",
+		"image": "/testimonials/avatar-03.png",
 		"message": "“Servicio y trato excelente.”"
 	}
 ]

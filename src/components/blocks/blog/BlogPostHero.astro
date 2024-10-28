@@ -50,7 +50,7 @@ const { tags, title, author, publishDate } = Astro.props
 				tags && (
 					<div class="post-header__tags">
 						{tags.map((tag: string) => (
-							<Badge name={tag} link={`/ecoat-web/blog/tags/` + tag} classes="capitalize" />
+							<Badge name={tag} link={`/blog/tags/` + tag} classes="capitalize" />
 						))}
 					</div>
 				)

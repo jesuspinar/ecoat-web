@@ -12,17 +12,17 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
 	{
 		name: 'facebook',
-		link: '/ecoat-web',
+		link: '',
 		icon: 'fb-icon'
 	},
 	{
 		name: 'twitter',
-		link: '/ecoat-web',
+		link: '',
 		icon: 'twitter-icon'
 	},
 	{
 		name: 'discord',
-		link: '/ecoat-web',
+		link: '',
 		icon: 'discord-icon'
 	}
 ]
