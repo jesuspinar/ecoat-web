@@ -93,7 +93,7 @@ export const footerNavigationData: FooterData = {
       subCategories: [
         {
           subCategory: 'Inicio',
-          subCategoryLink: ''
+          subCategoryLink: '/'
         },
         {
           subCategory: 'Blog',
