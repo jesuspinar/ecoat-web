@@ -40,7 +40,7 @@ export const footerNavigationData: FooterData = {
     aboutText:
       'En ECOAT, te ayudamos a simplificar la contabilidad, fiscalidad, gestión laboral y mercantil de tu negocio. Estamos aquí para apoyarte en cada paso, ofreciendo soluciones eficientes y un soporte experto.',
     logo: {
-      src: '/logo.svg',
+      src: '/ecoat-web/logo.svg',
       alt: 'The tailwind astro theme',
       text: 'ECOAT'
     }
@@ -51,15 +51,15 @@ export const footerNavigationData: FooterData = {
       subCategories: [
         {
           subCategory: 'Servicios',
-          subCategoryLink: '/services'
+          subCategoryLink: '/ecoat-web/services'
         },
         {
           subCategory: 'FAQ',
-          subCategoryLink: '/faq'
+          subCategoryLink: '/ecoat-web/faq'
         },
         {
           subCategory: 'Novedades',
-          subCategoryLink: '/changelog'
+          subCategoryLink: '/ecoat-web/changelog'
         },
         {
           subCategory: 'Política de Privacidad',
@@ -97,7 +97,7 @@ export const footerNavigationData: FooterData = {
         },
         {
           subCategory: 'Blog',
-          subCategoryLink: '/blog'
+          subCategoryLink: '/ecoat-web/blog'
         },
       ]
     },

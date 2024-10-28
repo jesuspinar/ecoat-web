@@ -16,12 +16,12 @@ const currentTag = pathSegments[pathSegments.length - 1] || ''
 ---
 
 <div class="tags">
-	<Badge link={`/blog/`} name={`Todos`} type={`${currentTag === 'blog' ? 'primary' : 'neutral'}`} />
+	<Badge link={`/ecoat-web/blog/`} name={`Todos`} type={`${currentTag === 'blog' ? 'primary' : 'neutral'}`} />
 	{
 		tags.map((tag) => (
 			<>
 				<Badge
-					link={`/blog/tags/${tag}`}
+					link={`/ecoat-web/blog/tags/${tag}`}
 					name={tag}
 					type={`${currentTag === tag ? 'primary' : 'neutral'}`}
 				/>

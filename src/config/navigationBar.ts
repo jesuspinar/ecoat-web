@@ -34,20 +34,20 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo.svg',
+		src: '/ecoat-web/logo.svg',
 		alt: 'The tailwind astro theme',
 		text: 'ECOAT'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'Servicios', link: '/services' },
+		{ name: 'Servicios', link: '/ecoat-web/services' },
 		{
 			name: 'Recursos',
 			link: '#',
 			submenu: [
-        { name: 'FAQ', link: '/faq' },
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Novedades', link: '/changelog' },
+        { name: 'FAQ', link: '/ecoat-web/faq' },
+				{ name: 'Blog', link: '/ecoat-web/blog' },
+				{ name: 'Novedades', link: '/ecoat-web/changelog' },
 			]
 		},
 	],

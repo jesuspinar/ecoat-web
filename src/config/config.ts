@@ -27,7 +27,7 @@ export const configData: Config = {
 		'ECOAT es una asesoría situada en Denia especializada en áreas: contable, fiscal, laboral y mercantil.',
 	ogImage: '/og.jpg',
 	logo: {
-		src: '/logo.svg',
+		src: '/ecoat-web/logo.svg,
 		alt: 'ECOAT. logo'
 	},
 	canonical: true,
