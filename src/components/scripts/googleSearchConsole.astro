@@ -1,0 +1,11 @@
+---
+// Google Search Console meta tag
+// Copyright (c) 2024 Oxygenna - MIT License
+import { googleSiteVerification } from '../../../src/config/analytics'
+---
+
+{
+	googleSiteVerification && (
+		<meta name="google-site-verification" content={googleSiteVerification} />
+	)
+}

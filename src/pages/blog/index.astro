@@ -1,0 +1,36 @@
+---
+// Blog Index Page
+// Copyright (c) 2024 Oxygenna - MIT License
+// ------------
+// Description: The blog index page.
+
+// Components
+// - Layout
+import Layout from '../../layouts/Layout.astro'
+// - UI
+import Hero from '../../components/blocks/hero/PageHeader.astro'
+import BlogPosts from '../../components/blocks/blog/BlogPosts.astro'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'ECOAT | Blog sobre Contabilidad, Fiscalidad y Gestión Empresarial',
+	description:
+		'Bienvenido al blog de ECOAT, tu fuente de información sobre contabilidad, fiscalidad y gestión empresarial. Aquí encontrarás artículos, consejos y recursos prácticos que te ayudarán a optimizar tus procesos y a mantenerte al día con las últimas tendencias del sector. Aprende a mejorar tu productividad y a manejar mejor tus recursos con nuestros expertos.'
+}
+// - Page Header
+const header = {
+	title: 'El Blog de <strong>ECOAT</strong>',
+	text: 'Descubre todo lo que necesitas saber para impulsar tu negocio y mejorar tu gestión desde consejos a recursos.'
+}
+
+const allPosts = await getCollection('blog')
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<BlogPosts data={allPosts} />
+</Layout>

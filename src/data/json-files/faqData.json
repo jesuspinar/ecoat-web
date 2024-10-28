@@ -1,0 +1,32 @@
+[
+	{
+		"question": "Si no he cobrado una factura de un cliente, ¿tengo que pagar el IVA?",
+		"reply": "Sí, desde el momento que haces la factura debes pagar el IVA en el trimestre dentro del cual está hecha la factura. No obstante, si posteriormente la factura queda impagada, puedes recuperar el IVA pagado.",
+		"category": "contable",
+		"open": true
+	},
+	{
+		"question": "¿Puedo deducir los gastos de gasolina y vehículo?",
+		"reply": "El vehículo depende de las características del mismo y del uso exclusivo. Sin embargo, el combustible empleado para la actividad podrá deducirse si podemos probar que se utiliza para ella y es necesario. Recomendamos que se guarden los partes de visitas, la firma de clientes a las visitas, los restaurantes en los lugares de desplazamiento, etc.",
+		"category": "fiscal",
+		"open": false
+	},
+	{
+		"question": "¿Es interesante hacer una sociedad en lugar de tributar como autónomo?",
+		"reply": "Depende de las circunstancias personales de cada uno. Si el negocio a desarrollar conlleva riesgos importantes o está creciendo rápidamente, una buena forma de estructurar la actividad es a través de una sociedad.",
+		"category": "mercantil",
+		"open": false
+	},
+	{
+		"question": "Si vendo a través de una plataforma mercancía, ¿dónde pago el IVA?",
+		"reply": "Si vendes a empresas y estas tienen número intracomunitario, emitirás facturas sin IVA. Si emites a particulares, tendrán IVA español hasta el límite de 10,000 euros de venta fuera de España; a partir de ese momento estarán sujetas a la ventanilla única.",
+		"category": "fiscal",
+		"open": false
+	},
+	{
+		"question": "¿Qué significa un NIF W de Amazon?",
+		"reply": "Significa que Amazon tiene un establecimiento permanente en España, y por lo tanto te emitirá la factura con IVA español, el cual podrás deducir si eres empresa.",
+		"category": "fiscal",
+		"open": false
+	}
+]

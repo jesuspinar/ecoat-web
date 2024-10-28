@@ -1,0 +1,134 @@
+---
+// Copyright (c) 2024 Oxygenna - MIT License
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'ECOAT | Política de Cookies',
+	description:
+		'La política de cookies de ECOAT explica el uso de cookies en nuestro sitio web, su finalidad y cómo puedes gestionarlas.'
+}
+// - Page Header
+const header = {
+	title: 'Política de Cookies: Información y Control',
+	text: 'Conoce el uso de cookies en nuestro sitio web y cómo puedes gestionarlas.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Información sobre Cookies</h3>
+			<p>
+				Conforme con la Ley 34/2002 de servicios de la sociedad de la información y el Reglamento
+				General de Protección de Datos (GDPR), necesitamos tu consentimiento para el uso de ciertas
+				cookies.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>¿Qué son las Cookies?</h4>
+			<p>
+				Las cookies son herramientas utilizadas por servidores web para almacenar y recuperar
+				información sobre sus visitantes y garantizar un correcto funcionamiento del sitio.
+			</p>
+			<p>
+				A través de estos dispositivos, el servidor web puede recordar datos importantes como tus
+				preferencias de visualización, nombre de usuario, y productos de interés.
+			</p>
+
+			<h4>Cookies afectadas por la normativa y cookies exceptuadas</h4>
+			<p>
+				Las cookies que requieren consentimiento del usuario son las de analítica y las de
+				publicidad, mientras que las técnicas y necesarias para la funcionalidad del sitio están
+				exceptuadas.
+			</p>
+
+			<h4>Tipos de Cookies</h4>
+			<p>
+				<strong>Según la Finalidad</strong>
+				<ul>
+					<li>Cookies técnicas y funcionales: facilitan la navegación y uso de servicios.</li>
+					<li>Cookies analíticas: permiten analizar el comportamiento de los usuarios.</li>
+					<li>
+						Cookies publicitarias y de publicidad comportamental: gestionan anuncios y preferencias
+						personales.
+					</li>
+					<li>Cookies de afiliación: rastrean visitas desde sitios con contratos de afiliación.</li>
+					<li>Cookies sociales: permiten compartir contenido en redes sociales.</li>
+				</ul>
+			</p>
+			<br />
+			<p>
+				<strong>Según la Propiedad</strong>
+				<ul>
+					<li>Cookies propias: gestionadas directamente por el editor del sitio web.</li>
+					<li>Cookies de terceros: gestionadas por entidades externas.</li>
+				</ul>
+			</p>
+			<br />
+			<p>
+				<strong>Según el Plazo de Conservación</strong>
+				<ul>
+					<li>Cookies de sesión: almacenan datos mientras navegas por el sitio.</li>
+					<li>Cookies persistentes: almacenan datos durante un período definido.</li>
+				</ul>
+			</p>
+		</div>
+	</SidebarContent>
+	<SidebarContent classes="bg-secondary-50 dark:bg-secondary-900">
+		<div slot="sidebar">
+			<h3>Tratamiento de Datos Personales</h3>
+			<p>
+				ECOAT SLP es responsable del tratamiento de datos de los usuarios conforme al Reglamento
+				(UE) 2016/679.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>Fines del Tratamiento</h4>
+			<p>Los datos se utilizan según las cookies en nuestro sitio web.</p>
+
+			<h4>Legitimación del Tratamiento</h4>
+			<p>
+				Salvo casos necesarios para la navegación, el tratamiento se realiza con el consentimiento
+				del usuario.
+			</p>
+
+			<h4>Derechos del Usuario</h4>
+			<ul>
+				<li>Retirar el consentimiento en cualquier momento.</li>
+				<li>Derecho de acceso, rectificación, portabilidad y supresión de datos.</li>
+				<li>Derecho a presentar una reclamación ante la Autoridad de control.</li>
+			</ul>
+			<br />
+			<p>
+				<strong>Contacto:</strong> ECOAT SLP, CALLE XABIA, 16 BAJO - 03700 DENIA (Alacant). Correo: ecoat@ecoat2000.com
+			</p>
+		</div>
+	</SidebarContent>
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Cookies Utilizadas en Este Sitio Web</h3>
+			<p>Información sobre las cookies controladas por el editor y las de terceros.</p>
+		</div>
+		<div class="basic-text">
+			<h4>Cookies Controladas por el Editor</h4>
+			<p><u>No se instalan cookies controladas por el editor.</u></p>
+
+			<h4>Cookies de Terceros</h4>
+			<p>
+				Los servicios de terceros son ajenos al control del editor y pueden modificar sus
+				condiciones en cualquier momento.
+			</p>
+			<p>
+				<u>No se instalan cookies de terceros.</u>
+			</p>
+		</div>
+	</SidebarContent>
+</Layout>

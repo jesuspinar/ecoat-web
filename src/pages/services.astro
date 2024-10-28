@@ -1,0 +1,70 @@
+---
+// Copyright (c) 2024 Oxygenna - MIT License
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Feature from '../components/blocks/features/FeatureSticky.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Data
+import featuresData from '../data/json-files/featuresData.json'
+// - Feature Categories
+const featuresContable = featuresData.filter((feature) => feature.category === 'Contable')
+const featuresFiscal = featuresData.filter((feature) => feature.category === 'Fiscal')
+const featuresLaboral = featuresData.filter((feature) => feature.category === 'Laboral')
+const featuresMercantil = featuresData.filter((feature) => feature.category === 'Mercantil')
+const featuresSoporte = featuresData.filter((feature) => feature.category === 'Soporte')
+
+// Content
+// - SEO
+const SEO = {
+	title: 'ECOAT | Servicios Contables, Fiscales, Laborales y Mercantiles para Empresas y Autónomos',
+	description:
+		'Descubre los servicios de ECOAT, diseñados para optimizar la contabilidad, fiscalidad, gestión laboral y mercantil de tu empresa o como autónomo. Nuestra plataforma ofrece soporte personalizado y soluciones integrales que simplifican tus operaciones y te ayudan a cumplir con las normativas vigentes.'
+}
+// - Page Header
+const header = {
+	title: 'Servicios <strong>integrales</strong> para tu negocio.',
+	text: 'Simplifica la gestión de tu empresa o actividad como autónomo con nuestros servicios especializados en contabilidad, fiscalidad, gestión laboral y mercantil.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<Feature
+		id="accounting"
+		title="Soluciones Contables Profesionales"
+		text="Optimiza la contabilidad de tu empresa o actividad como autónomo con nuestros servicios completos que aseguran el cumplimiento legal y la gestión financiera eficiente."
+		data={featuresContable}
+	/>
+	<Feature
+		id="tax"
+		title="Servicios Fiscales a Medida"
+		text="Simplifica tus obligaciones fiscales con nuestros servicios especializados en la confección de impuestos, consultoría fiscal y declaraciones para empresas y autónomos."
+		data={featuresFiscal}
+		classes="bg-secondary-50 dark:bg-secondary-900"
+	/>
+	<Feature
+		id="labor"
+		title="Gestión Laboral Eficiente"
+		text="Nos encargamos de todos los aspectos laborales de tu negocio, desde la confección de nóminas y contratos hasta la gestión de altas y bajas de autónomos."
+		data={featuresLaboral}
+	/>
+	<Feature
+		id="mercantile"
+		title="Asesoramiento Mercantil"
+		text="Facilitamos la constitución de sociedades, la gestión de herencias y ofrecemos consultoría jurídica especializada para optimizar la estructura legal de tu empresa."
+		data={featuresMercantil}
+		classes="bg-secondary-50 dark:bg-secondary-900"
+	/>
+	<Feature
+		id="support"
+		title="Asesoría Personalizada"
+		text="Nuestro equipo de asesores está disponible durante nuestro horario de atención para ayudarte con cualquier consulta."
+		data={featuresSoporte}
+	/>
+
+	<CTA />
+</Layout>

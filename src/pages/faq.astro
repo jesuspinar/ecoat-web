@@ -1,0 +1,46 @@
+---
+// Copyright (c) 2024 Oxygenna - MIT License
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import FAQ from '../components/blocks/FAQ/FaqSticky.astro'
+import TextImage from '../components/blocks/basic/TextImage.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Data
+import faqData from '../data/json-files/faqData.json'
+
+// Content
+import faqImage1 from '../assets/faq/faq.webp'
+const SEO = {
+	title: 'ECOAT | Respuestas a Todas tus Dudas Frecuentes',
+	description:
+		'Descubre respuestas a preguntas frecuentes sobre temas fiscales, contables, de gestión laboral y mercantil. Aprovecha al máximo los beneficios de ECOAT en tu trabajo y simplifica tu vida profesional.'
+}
+// - Page Header
+const header = {
+	title: 'Preguntas y Respuestas más <strong>frecuentes</strong>',
+	text: 'Encuentra respuestas y aclaraciones a tus dudas sobre los servicios y funciones de ECOAT, y aprovecha al máximo su potencial.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<FAQ
+		title="Servicios Fiscales"
+		text="Encuentra respuestas a preguntas comunes sobre servicios fiscales, deducción de impuestos, y optimización fiscal con ECOAT."
+		data={faqData}
+	/>
+	<TextImage
+		title="Valor y Eficiencia en Cada Plan"
+		text="En ECOAT ofrecemos un valor excepcional en cada uno de nuestros planes de servicio. Desde pequeños autónomos hasta grandes empresas, nuestras tarifas están diseñadas para brindar acceso a soluciones integrales de gestión y soporte fiscal, contable, y mercantil, siempre con atención personalizada."
+		image={faqImage1}
+		mobileImage={faqImage1}
+		imagePosition="left"
+		offsetImage
+		classes="bg-secondary-50 dark:bg-secondary-900 lg:!py-64"
+	/>
+	<CTA />
+</Layout>

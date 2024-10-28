@@ -1,0 +1,31 @@
+---
+// Copyright (c) 2024 Oxygenna - MIT License
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/HomeCTA.astro'
+import Features from '../components/blocks/features/FeatureCards.astro'
+import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
+import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - Testimonial background
+import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import TestimonialList from '../components/ui/TestimonialList.astro'
+// - SEO
+const SEO = {
+	title: 'ECOAT | Asesoramiento a empresas y autonomos',
+	description:
+		'ECOAT es una asesoría situada en Denia especializada en áreas: contable, fiscal, laboral y mercantil.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero />
+	<Features />
+	<TestimonialList />
+	<HighlightBlocks />
+	<CTA />
+</Layout>

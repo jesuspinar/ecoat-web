@@ -1,0 +1,48 @@
+---
+// Home page CTA Section
+// Copyright (c) 2024 Oxygenna - MIT License
+// ------------
+// Description: A centered call to action section that contains: a title, text, a user review snippet, a button and a image.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import AvatarGroup from '../../ui/AvatarGroup.astro'
+
+// Content
+// - Hero Image
+import heroImage from '../../../assets/hero.webp'
+// - Avatars
+import user1 from '../../../assets/avatars/avatar-04.webp'
+import user2 from '../../../assets/avatars/avatar-05.webp'
+import user3 from '../../../assets/avatars/avatar-01.webp'
+const avatars = [
+	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+]
+---
+
+<Section id="intro" padding="top" bg={heroImage}>
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center" classes='mb-12'>
+			<ChipNotification radius="rounded-full" classes="mb-6">
+				<strong>100+&nbsp;</strong>clientes satisfechos
+				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
+			</ChipNotification>
+			<h1 class="text-white">Tu asesoria de <strong>confianza</strong></h1>
+			<p class="pb-0 text-lg text-white">
+				Nos preocupamos por tu empresa como si fuera la nuestra.
+			</p>
+			<Button size="lg" link="tel:+34966420717">Consulta gratis</Button>
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>

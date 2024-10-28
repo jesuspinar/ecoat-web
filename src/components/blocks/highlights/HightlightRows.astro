@@ -1,0 +1,76 @@
+---
+// Highlights Section
+// Copyright (c) 2024 Oxygenna - MIT License
+// ------------
+// Description: A section with a multiple text and image rows.
+
+// Components
+// - UI
+import TextImage from '../basic/TextImage.astro'
+
+// Content
+import highlight01 from '../../../assets/highlights/highlight-01.svg'
+import highlight01mobile from '../../../assets/highlights/highlight-01-mobile.svg'
+import highlight02 from '../../../assets/highlights/highlight-02.svg'
+import highlight02mobile from '../../../assets/highlights/highlight-02-mobile.svg'
+import highlight03 from '../../../assets/highlights/highlight-03.svg'
+import highlight03mobile from '../../../assets/highlights/highlight-03-mobile.svg'
+import highlight04 from '../../../assets/highlights/highlight-04.svg'
+import highlight04mobile from '../../../assets/highlights/highlight-04-mobile.svg'
+
+type HighlightBlock = {
+	title: string
+	text: string
+	image: any
+	mobileImage?: any
+	imageWidth: number
+	imageHeight: number
+	imagePosition: 'left' | 'right'
+}
+const highlightBlocks: HighlightBlock[] = [
+	{
+		title: 'Destacamos por <strong>Experiencia</strong>',
+		text: 'Somos un equipo multidisplinar, especializados en asesorar a empresas y particulares para que obtengan el máximo benefício minimizando los riesgos.',
+		image: highlight01,
+		imageWidth: highlight01.width,
+		imageHeight: highlight01.height,
+		mobileImage: highlight01mobile,
+		imagePosition: 'right'
+	},
+	{
+		title: 'Asesoria en <strong>Denia</strong>',
+		text: 'En nuestro equipo tus tramites serán mucho más sencillos y rápidos de llevar puesto que dominamos las siguientes áreas : mercantil, fiscal, laboral, contable.',
+		image: highlight02,
+		mobileImage: highlight02mobile,
+		imageWidth: highlight02.width,
+		imageHeight: highlight02.height,
+		imagePosition: 'left'
+	},
+	{
+		title: 'Equipo de <strong>Soporte</strong>',
+		text: 'Al recibir nuestro asesoramiento notaras un trato único digno de profesionales en el sector, atentos a las necesidades de tu empresa o negocio en todo momento.',
+		image: highlight03,
+		mobileImage: highlight03mobile,
+		imageWidth: highlight03.width,
+		imageHeight: highlight03.height,
+		imagePosition: 'right'
+	},
+
+]
+---
+
+{
+	highlightBlocks.map((highlight, key) => (
+		<TextImage
+			id={`highlight-${key}`}
+			title={highlight.title}
+			text={highlight.text}
+			image={highlight.image}
+			imageWidth={highlight.imageWidth}
+			imageHeight={highlight.imageHeight}
+			mobileImage={highlight.mobileImage}
+			imagePosition={highlight.imagePosition}
+			classes={key === 0 ? '!pb-0' : key === highlightBlocks.length - 1 ? '!pt-0' : '!py-0'}
+		/>
+	))
+}

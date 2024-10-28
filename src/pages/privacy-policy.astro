@@ -1,0 +1,125 @@
+---
+// Copyright (c) 2024 Oxygenna - MIT License
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'ECOAT | Política de Privacidad',
+	description:
+		"Política de privacidad de ECOAT para informarte sobre cómo tratamos y protegemos tus datos personales conforme al GDPR y la LOPDGDD."
+}
+// - Page Header
+const header = {
+	title: 'Política de Privacidad: Protección y <strong>Transparencia</strong>',
+	text: 'Infórmate sobre cómo ECOAT protege tus datos personales conforme a la normativa vigente.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Información al Usuario</h3>
+			<p>
+				ECOAT SLP es el RESPONSABLE del tratamiento de los datos personales del USUARIO y le informa de que estos datos serán tratados de conformidad con el Reglamento (UE) 2016/679 y la Ley Orgánica 3/2018 (LOPDGDD).
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>¿Quién es el responsable del tratamiento de tus datos personales?</h4>
+			<p>
+				ECOAT SLP gestiona los datos del usuario, cumpliendo con las normativas GDPR y LOPDGDD para asegurar un tratamiento adecuado y seguro de los mismos.
+			</p>
+
+			<h4>¿Para qué tratamos tus datos personales?</h4>
+			<ul>
+				<li>Remisión de comunicaciones comerciales relacionadas con productos y servicios de ECOAT o de colaboradores.</li>
+				<li>Realizar estudios de mercado y análisis estadísticos.</li>
+				<li>Gestionar consultas o solicitudes realizadas por el usuario.</li>
+				<li>Enviar boletines informativos sobre novedades y promociones.</li>
+			</ul>
+
+			<h4>¿Por qué motivo podemos tratar tus datos personales?</h4>
+			<ul>
+				<li>Consentimiento del usuario para comunicaciones comerciales y boletines informativos.</li>
+				<li>Interés legítimo de ECOAT para realizar estudios de mercado y gestionar solicitudes del usuario.</li>
+			</ul>
+		</div>
+	</SidebarContent>
+	<SidebarContent classes="bg-secondary-50 dark:bg-secondary-900">
+		<div slot="sidebar">
+			<h3>Duración del Almacenamiento</h3>
+			<p>
+				Los datos se conservarán solo mientras sea necesario para el tratamiento o según obligaciones legales.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>¿Durante cuánto tiempo guardaremos tus datos personales?</h4>
+			<p>
+				Se conservarán hasta que no sean necesarios para el fin del tratamiento, y luego se eliminarán garantizando la seguridad.
+			</p>
+
+			<h4>¿A quién facilitamos tus datos personales?</h4>
+			<p>
+				No se prevé comunicación de datos a terceros, excepto para el desarrollo de nuestras actividades con proveedores de servicios de comunicación.
+			</p>
+		</div>
+	</SidebarContent>
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Derechos del Usuario</h3>
+			<p>
+				Conoce los derechos que tienes respecto al tratamiento de tus datos personales.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>¿Cuáles son tus derechos?</h4>
+			<ul>
+				<li>Retirar el consentimiento en cualquier momento.</li>
+				<li>Acceso, rectificación, portabilidad y supresión de datos, y oposición o limitación del tratamiento.</li>
+				<li>Presentar una reclamación ante la autoridad de control en www.aepd.es.</li>
+			</ul>
+
+			<h4>Datos de contacto para ejercer tus derechos</h4>
+			<address>
+				ECOAT SLP. CALLE XABIA, 16 BAJO - 03700 DENIA (Alacant). E-mail: ecoat@ecoat2000.com
+			</address>
+		</div>
+	</SidebarContent>
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Carácter Obligatorio o Facultativo de la Información</h3>
+			<p>
+				Entiende la importancia de la información proporcionada y sus efectos sobre los servicios.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>Carácter Obligatorio de la Información</h4>
+			<p>
+				Todos los datos solicitados son necesarios para un servicio óptimo; no facilitarlos puede afectar la calidad del servicio.
+			</p>
+		</div>
+	</SidebarContent>
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Medidas de Seguridad</h3>
+			<p>
+				Te informamos sobre las políticas implementadas para proteger tus datos personales.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>Medidas de Seguridad</h4>
+			<p>
+				Conforme a la GDPR y LOPDGDD, ECOAT asegura el tratamiento seguro y adecuado de tus datos, implementando políticas de seguridad para proteger tus derechos.
+			</p>
+			<p>
+				Para más información sobre nuestra política de privacidad, puedes contactarnos en ECOAT SLP. CALLE XABIA, 16 BAJO - 03700 DENIA (Alacant). E-mail: ecoat@ecoat2000.com
+			</p>
+		</div>
+	</SidebarContent>
+</Layout>

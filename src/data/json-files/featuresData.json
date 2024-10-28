@@ -1,0 +1,134 @@
+[
+	{
+		"title": "Contabilidad de Sociedades y Autónomos",
+		"icon": "chart-pie",
+		"description": "Ofrecemos un servicio completo de contabilidad para sociedades y autónomos, asegurando el cumplimiento de las normativas fiscales y contables, y optimizando la gestión financiera de tu negocio.",
+		"category": "Contable"
+	},
+	{
+		"title": "Confección de libros contables obligatorios",
+		"icon": "squares-plus",
+		"description": "Nos encargamos de la elaboración de los libros contables obligatorios en estimación directa y módulos, garantizando el cumplimiento de la normativa fiscal y facilitando la presentación de declaraciones.",
+		"category": "Contable"
+	},
+	{
+		"title": "Análisis de balances y estudios financieros",
+		"icon": "squares-plus",
+		"description": "Realizamos análisis detallados de balances y estudios económicos para evaluar la salud financiera de tu empresa y apoyar la toma de decisiones estratégicas.",
+		"category": "Contable"
+	},
+	{
+		"title": "Preparación de documentación para solicitudes de préstamos",
+		"icon": "rocket",
+		"description": "Te asistimos en la preparación de la documentación necesaria para la solicitud de préstamos, facilitando el acceso a financiación para tu negocio.",
+		"category": "Contable"
+	},
+	{
+		"title": "Confección de cuentas anuales para empresas mercantiles",
+		"icon": "device-phone-mobile",
+		"description": "Nos encargamos de la confección de las cuentas anuales de tu empresa mercantil, asegurando una presentación correcta y oportuna ante los organismos correspondientes.",
+		"category": "Contable"
+	},
+	{
+		"title": "Alta censal en Hacienda y autónomo",
+		"icon": "trophy",
+		"description": "Te ayudamos a gestionar el alta censal en Hacienda y el alta como autónomo, facilitando el cumplimiento de los requisitos legales y fiscales.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Confección de impuestos trimestrales",
+		"icon": "shield-check",
+		"description": "Nos encargamos de la preparación y presentación de los impuestos trimestrales, asegurando que estés al día con tus obligaciones fiscales.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Resúmenes anuales para empresas y autónomos",
+		"icon": "arrow-trending-up",
+		"description": "Preparamos resúmenes anuales detallados para empresas y autónomos, ayudándote a cumplir con las obligaciones fiscales de forma eficiente.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Altas intracomunitarias",
+		"icon": "bell-alert",
+		"description": "Gestionamos el alta intracomunitaria, permitiéndote realizar operaciones comerciales con otros países de la Unión Europea de forma legal y eficiente.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Consultoría y estudios fiscales para empresas",
+		"icon": "clipboard-document-list",
+		"description": "Ofrecemos un servicio de consultoría fiscal personalizado para tu empresa, realizando estudios fiscales detallados para optimizar tu situación tributaria.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Declaración de la Renta",
+		"icon": "user-group",
+		"description": "Nos encargamos de la preparación y presentación de tu declaración de la renta, asegurando el máximo aprovechamiento de deducciones y beneficios fiscales.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Impuesto sobre Sociedades",
+		"icon": "chat-bubble-left-right",
+		"description": "Te asistimos en la preparación y presentación del Impuesto sobre Sociedades, garantizando el cumplimiento de todas las obligaciones fiscales de tu empresa.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Impuesto sobre la Renta de no residentes",
+		"icon": "computer-desktop",
+		"description": "Ofrecemos servicios especializados en la declaración del Impuesto sobre la Renta de No Residentes, asegurando el cumplimiento de la normativa vigente.",
+		"category": "Fiscal"
+	},
+	{
+		"title": "Alta y baja de autónomos",
+		"icon": "bell",
+		"description": "Gestionamos tanto el alta como la baja de autónomos, asegurando que cumplas con todos los requisitos legales durante el proceso.",
+		"category": "Laboral"
+	},
+	{
+		"title": "Solicitud de número de afiliación para empresas",
+		"icon": "arrow-path-rounded-square",
+		"description": "Te ayudamos en la gestión de la solicitud del número de afiliación de la Seguridad Social para tu empresa, facilitando el cumplimiento de tus obligaciones laborales.",
+		"category": "Laboral"
+	},
+	{
+		"title": "Confección de nóminas y contratos laborales",
+		"icon": "user",
+		"description": "Nos encargamos de la confección de nóminas y contratos laborales, asegurando el cumplimiento de la normativa laboral vigente y una gestión eficiente de tu plantilla.",
+		"category": "Laboral"
+	},
+	{
+		"title": "Contratos de arrendamiento de vivienda y locales comerciales",
+		"icon": "paint-brush",
+		"description": "Confeccionamos contratos de arrendamiento para viviendas y locales comerciales, ajustados a la normativa vigente y personalizados para tus necesidades.",
+		"category": "Mercantil"
+	},
+	{
+		"title": "Gestión de constitución de Sociedades",
+		"icon": "circle-stack",
+		"description": "Te asistimos en todas las gestiones necesarias para la constitución de Sociedades Mercantiles, garantizando un proceso eficiente y legal.",
+		"category": "Mercantil"
+	},
+	{
+		"title": "Estudio de la forma jurídica para Sociedades Mercantiles",
+		"icon": "document-chart-bar",
+		"description": "Realizamos un análisis detallado de las formas jurídicas más adecuadas para la constitución de Sociedades Mercantiles, ajustado a tus necesidades empresariales.",
+		"category": "Mercantil"
+	},
+{
+		"title": "Soporte al Cliente Personalizado",
+		"icon": "trophy",
+		"description": "Recibe un soporte al cliente dedicado y personalizado en nuestra asesoría física dentro de nuestro horario para ayudarte con cualquier duda o consulta.",
+		"category": "Soporte"
+	},
+	{
+		"title": "Asistencia Especializada para Nuestros Clientes",
+		"icon": "user",
+		"description": "Recibe atención personalizada ante cualquier duda, ya sea  de forma presencial o remoto asegurando que tengas un soporte completo y eficiente.",
+		"category": "Soporte"
+	},
+	{
+		"title": "Acceso a una Base de Conocimientos en Gestión y Fiscalidad",
+		"icon": "document-text",
+		"description": "Consulta una base de conocimientos completa con artículos, guías y respuestas a preguntas frecuentes para aclarar tus dudas sobre nuestros servicios y asesoría.",
+		"category": "Soporte"
+	}
+]
