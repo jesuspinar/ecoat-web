@@ -63,15 +63,15 @@ export const footerNavigationData: FooterData = {
         },
         {
           subCategory: 'Política de Privacidad',
-          subCategoryLink: '/privacy-policy'
+          subCategoryLink: '/ecoat-web/privacy-policy'
         },
         {
           subCategory: 'Política de Cookies',
-          subCategoryLink: '/cookies-policy'
+          subCategoryLink: '/ecoat-web/cookies-policy'
         },
         {
           subCategory: 'Aviso legal',
-          subCategoryLink: '/terms'
+          subCategoryLink: '/ecoat-web/terms'
         }
       ]
     },
@@ -93,7 +93,7 @@ export const footerNavigationData: FooterData = {
       subCategories: [
         {
           subCategory: 'Inicio',
-          subCategoryLink: '/'
+          subCategoryLink: '/ecoat-web'
         },
         {
           subCategory: 'Blog',
