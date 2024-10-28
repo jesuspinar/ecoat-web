@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://ecoatasesores.com/",
+  site: "https://www.ecoatasesores.com/",
   base: "/ecoat-web",
   integrations: [
     tailwind(),
