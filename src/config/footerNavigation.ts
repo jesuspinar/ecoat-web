@@ -41,7 +41,7 @@ export const footerNavigationData: FooterData = {
       'En ECOAT, te ayudamos a simplificar la contabilidad, fiscalidad, gestión laboral y mercantil de tu negocio. Estamos aquí para apoyarte en cada paso, ofreciendo soluciones eficientes y un soporte experto.',
     logo: {
       src: '/logo.svg',
-      alt: 'The tailwind astro theme',
+      alt: 'Ecoat asesores',
       text: 'ECOAT'
     }
   },

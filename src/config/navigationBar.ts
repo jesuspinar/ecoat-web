@@ -35,7 +35,7 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
+		alt: 'Ecoat asesores',
 		text: 'ECOAT'
 	},
 	navItems: [
