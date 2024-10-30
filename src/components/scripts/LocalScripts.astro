@@ -150,3 +150,32 @@
 		document.documentElement.classList.remove('dark')
 	}
 </script>
+
+<!-- Cookie Consent Alert -->
+<script async defer>
+	const cookieName = 'z-cookies-consent-ecoatasesores.com'
+	const expirationDays = 10
+	function setCookie(name, value, days) {
+		const date = new Date()
+		date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000)
+		const expires = `expires=${date.toUTCString()}`
+		document.cookie = `${name}=${value}; ${expires}; path=/; SameSite=Strict`
+	}
+
+	function checkCookieConsent() {
+		const cookieAlert = document.getElementById('cookie-alert')
+		const acceptButton = document.getElementById('accept-cookies')
+
+		if (!document.cookie.includes(cookieName)) {
+			cookieAlert?.classList.remove('hidden')
+		}
+
+		acceptButton?.addEventListener('click', () => {
+			setCookie(cookieName, 'true', expirationDays)
+			cookieAlert?.classList.add('hidden')
+		})
+	}
+
+	document.addEventListener('astro:page-load', checkCookieConsent)
+	document.addEventListener('DOMContentLoaded', checkCookieConsent)
+</script>
