@@ -47,14 +47,14 @@ const { type = 'top-icon', title, icon = 'rocket', iconStyle, align, classes } =
 	<div class="feature__body">
 		{
 			title && (
-				<h3
+				<h2
 					class:list={[
 						'feature__title',
 						{ [`mb-2 py-2`]: iconStyle === 'square' && type === 'side-icon' }
 					]}
 				>
 					{title}
-				</h3>
+				</h2>
 			)
 		}
 		<slot />
