@@ -7,13 +7,13 @@
 	},
 	{
 		"title": "Confección de libros contables obligatorios",
-		"icon": "squares-plus",
+		"icon": "clipboard-document-list",
 		"description": "Nos encargamos de la elaboración de los libros contables obligatorios en estimación directa y módulos, garantizando el cumplimiento de la normativa fiscal y facilitando la presentación de declaraciones.",
 		"category": "Contable"
 	},
 	{
 		"title": "Análisis de balances y estudios financieros",
-		"icon": "squares-plus",
+		"icon": "check-circle",
 		"description": "Realizamos análisis detallados de balances y estudios económicos para evaluar la salud financiera de tu empresa y apoyar la toma de decisiones estratégicas.",
 		"category": "Contable"
 	},
@@ -25,7 +25,7 @@
 	},
 	{
 		"title": "Confección de cuentas anuales para empresas mercantiles",
-		"icon": "device-phone-mobile",
+		"icon": "document-chart-bar",
 		"description": "Nos encargamos de la confección de las cuentas anuales de tu empresa mercantil, asegurando una presentación correcta y oportuna ante los organismos correspondientes.",
 		"category": "Contable"
 	},
@@ -67,7 +67,7 @@
 	},
 	{
 		"title": "Impuesto sobre Sociedades",
-		"icon": "chat-bubble-left-right",
+		"icon": "chat-bubbles",
 		"description": "Te asistimos en la preparación y presentación del Impuesto sobre Sociedades, garantizando el cumplimiento de todas las obligaciones fiscales de tu empresa.",
 		"category": "Fiscal"
 	},
@@ -109,25 +109,25 @@
 	},
 	{
 		"title": "Estudio de la forma jurídica para Sociedades Mercantiles",
-		"icon": "document-chart-bar",
+		"icon": "document-text",
 		"description": "Realizamos un análisis detallado de las formas jurídicas más adecuadas para la constitución de Sociedades Mercantiles, ajustado a tus necesidades empresariales.",
 		"category": "Mercantil"
 	},
-{
+	{
 		"title": "Soporte al Cliente Personalizado",
-		"icon": "trophy",
+		"icon": "chat-bubble-left-ellipsis",
 		"description": "Recibe un soporte al cliente dedicado y personalizado en nuestra asesoría física dentro de nuestro horario para ayudarte con cualquier duda o consulta.",
 		"category": "Soporte"
 	},
 	{
 		"title": "Asistencia Especializada para Nuestros Clientes",
-		"icon": "user",
-		"description": "Recibe atención personalizada ante cualquier duda, ya sea  de forma presencial o remoto asegurando que tengas un soporte completo y eficiente.",
+		"icon": "microphone",
+		"description": "Recibe atención personalizada ante cualquier duda, ya sea de forma presencial o remota asegurando que tengas un soporte completo y eficiente.",
 		"category": "Soporte"
 	},
 	{
 		"title": "Acceso a una Base de Conocimientos en Gestión y Fiscalidad",
-		"icon": "document-text",
+		"icon": "book",
 		"description": "Consulta una base de conocimientos completa con artículos, guías y respuestas a preguntas frecuentes para aclarar tus dudas sobre nuestros servicios y asesoría.",
 		"category": "Soporte"
 	}
