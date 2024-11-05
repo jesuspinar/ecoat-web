@@ -77,46 +77,20 @@ import 'swiper/css/bundle'
 <style>
 	.swiper-button-prev,
 	.swiper-button-next {
+		position: absolute;
 		height: 60px;
 		width: auto;
 		color: grey;
-		margin-top: 3px;
+	}
+	.swiper-button-prev {
+		left: 0.2px;
+	}
+	.swiper-button-next {
+		right: 0.2px;
 	}
 	.swiper-button-prev::after,
 	.swiper-button-next::after {
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 60px;
 	}
 </style>
-
-<script>
-	import Swiper from 'swiper'
-	import { Navigation } from 'swiper/modules'
-	const testimonialSwiper = new Swiper('.testimonial-carousel', {
-		modules: [Navigation],
-
-		slidesPerView: 1,
-		spaceBetween: 30,
-
-		// Navigation arrows
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
-		},
-
-		breakpoints: {
-			640: {
-				slidesPerView: 1,
-				spaceBetween: 30
-			},
-			1024: {
-				slidesPerView: 2,
-				spaceBetween: 30
-			},
-			1280: {
-				slidesPerView: 3,
-				spaceBetween: 30
-			}
-		}
-	})
-</script>

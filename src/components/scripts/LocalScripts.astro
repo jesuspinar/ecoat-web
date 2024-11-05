@@ -1,5 +1,4 @@
-<!-- Scripts for UI components -->
-<!-- Copyright (c) 2024 Oxygenna - MIT License -->
+<!-- Scripts for UI components --><!-- Copyright (c) 2024 Oxygenna - MIT License -->
 <script async defer>
 	document.addEventListener('astro:page-load', () => {
 		// Menu Dropdown
@@ -178,4 +177,29 @@
 
 	document.addEventListener('astro:page-load', checkCookieConsent)
 	document.addEventListener('DOMContentLoaded', checkCookieConsent)
+</script>
+
+<!-- Testimonials List -->
+<script>
+	import Swiper from 'swiper'
+	import { Navigation } from 'swiper/modules'
+
+	function initSwiper() {
+		return new Swiper('.testimonial-carousel', {
+			modules: [Navigation],
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			breakpoints: {
+				640: { slidesPerView: 1 },
+				1024: { slidesPerView: 2 },
+				1280: { slidesPerView: 3 }
+			}
+		})
+	}
+	document.addEventListener('DOMContentLoaded', initSwiper)
+	document.addEventListener('astro:after-swap', initSwiper)
 </script>
