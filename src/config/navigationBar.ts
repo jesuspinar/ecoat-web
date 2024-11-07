@@ -39,7 +39,7 @@ export const navigationBarData: NavData = {
 		text: 'ECOAT'
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
+		{ name: 'Inicio', link: '/' },
 		{ name: 'Servicios', link: '/services' },
 		{
 			name: 'Recursos',
