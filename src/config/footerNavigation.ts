@@ -104,6 +104,6 @@ export const footerNavigationData: FooterData = {
 
   ],
   subFooter: {
-    copywriteText: '© ECOAT 2024.'
+    copywriteText: '© ECOAT ' + new Date().getFullYear()
   }
 }
