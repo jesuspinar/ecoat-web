@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Oxygenna - MIT License
+// Copyright (c) 2025 Oxygenna - MIT License
 import type { APIRoute } from 'astro'
 
 const robotsTxt = `

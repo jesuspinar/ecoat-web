@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Oxygenna - MIT License
+// Copyright (c) 2025 Oxygenna - MIT License
 import { z, defineCollection } from 'astro:content'
 import { glob } from 'astro/loaders'
 

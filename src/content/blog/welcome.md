@@ -1,6 +1,6 @@
 ---
 title: '¡Bienvenido a ECOAT!'
-pubDate: 2024-10-22T05:00:00Z
+pubDate: 2025-10-22T05:00:00Z
 description: 'Estamos emocionados de presentarte ECOAT, la solución integral diseñada para optimizar la gestión empresarial, la contabilidad y la fiscalidad.'
 author: 'Equipo de ECOAT'
 image: '/blog/post-01-cover.webp'

@@ -1,5 +1,5 @@
 // Social Links
-// Copyright (c) 2024 Oxygenna - MIT License
+// Copyright (c) 2025 Oxygenna - MIT License
 // ------------
 // Description: The social links data for the website.
 

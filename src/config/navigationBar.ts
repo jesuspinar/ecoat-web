@@ -1,5 +1,5 @@
 // Navigation Bar
-// Copyright (c) 2024 Oxygenna - MIT License
+// Copyright (c) 2025 Oxygenna - MIT License
 // ------------
 // Description: The navigation bar data for the website.
 export interface Logo {
