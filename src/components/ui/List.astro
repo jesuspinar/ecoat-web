@@ -41,6 +41,7 @@ const { type = 'basic', listColor = 'primary', listItems, classes } = Astro.prop
 </ul>
 
 <style>
+	@reference "/src/styles/global.css";
 	.list li {
 		@apply mb-2 ml-4 list-disc text-neutral-700 dark:text-neutral-50;
 	}

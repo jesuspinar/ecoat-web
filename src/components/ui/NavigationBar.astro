@@ -119,11 +119,9 @@ const savedNavActions = navActions.map((action) => ({
 </header>
 
 <style>
+	@reference "/src/styles/global.css";
 	.header {
-		@apply sticky top-0 z-20 w-full animate-fadeInShadowLight [animation-range:0%_20rem] [animation-timeline:scroll()] before:absolute after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full lg:after:hidden dark:animate-fadeInShadowDark dark:[animation-range:0%_20rem] dark:[animation-timeline:scroll()];
-	}
-	.header:before {
-		@apply block h-full w-full bg-white/90 lg:backdrop-blur-sm dark:bg-secondary-900/90;
+		@apply sticky top-0 z-20 w-full animate-fadeInShadowLight  bg-white/90 lg:backdrop-blur-sm dark:bg-secondary-900/90 [animation-range:0%_20rem] [animation-timeline:scroll()] before:absolute after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full lg:after:hidden dark:animate-fadeInShadowDark dark:[animation-range:0%_20rem] dark:[animation-timeline:scroll()];
 	}
 	.header__container {
 		@apply relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem];

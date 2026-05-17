@@ -30,6 +30,7 @@ const { size = 'base', link = '#', radius, image, classes } = Astro.props
 </a>
 
 <style>
+	@reference "/src/styles/global.css";
 	.avatar {
 		@apply relative inline-flex items-center justify-center text-white [&_img]:max-w-full;
 	}

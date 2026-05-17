@@ -1,4 +1,88 @@
 /* Copyright (c) 2025 Oxygenna - MIT License */
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source inline("{lg:,}col-span-{1,2,3,4,5,6,7,8,9,10,11,12}");
+@source inline("{lg:,}h-{0,2,3,4,6,8,12,16,24,32}");
+@source inline("{lg:,}text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,8xl,9xl}");
+@source inline("font-{thin,extralight,light,normal,medium,semibold,bold,extrabold,black}");
+@source inline("text-{left,center,right}");
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-headings: "Outfit Variable", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --cursor-fancy: url(https://www.svgrepo.com/show/269/color-picker.svg);
+
+  --color-primary-50: #fffce6;
+  --color-primary-100: #fff8cc;
+  --color-primary-200: #fff099;
+  --color-primary-300: #ffe766;
+  --color-primary-400: #ffdf33;
+  --color-primary-500: #e0cb00;
+  --color-primary-600: #c2b200;
+  --color-primary-700: #a39900;
+  --color-primary-800: #857f00;
+  --color-primary-900: #686600;
+  --color-primary-950: #4c4c00;
+
+  --color-secondary-50: #e6ebec;
+  --color-secondary-100: #ccd7d9;
+  --color-secondary-200: #99afb3;
+  --color-secondary-300: #66878c;
+  --color-secondary-400: #40666f;
+  --color-secondary-500: #5d787f;
+  --color-secondary-600: #4e656a;
+  --color-secondary-700: #3f5255;
+  --color-secondary-800: #303f41;
+  --color-secondary-900: #212c2d;
+  --color-secondary-950: #14191a;
+
+  --color-neutral-50: #f7f7f7;
+  --color-neutral-100: #eeeeee;
+  --color-neutral-200: #d1d5db;
+  --color-neutral-300: #a1a1aa;
+  --color-neutral-400: #737373;
+  --color-neutral-500: #525252;
+  --color-neutral-600: #404040;
+  --color-neutral-700: #2d2d2d;
+  --color-neutral-800: #1f1f1f;
+  --color-neutral-900: #0d0d0d;
+
+  --animate-dropdown: dropdown 300ms ease-in-out forwards;
+  --animate-fadeInShadowLight: fadeInShadowLight 500ms ease-in-out forwards;
+  --animate-fadeInShadowDark: fadeInShadowDark 500ms ease-in-out forwards;
+
+  @keyframes dropdown {
+    0% {
+      transform: translateY(-1rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInShadowLight {
+    100% {
+      box-shadow:
+        0 20px 25px -5px rgba(15, 23, 42, 0.025),
+        0 8px 10px -6px rgba(15, 23, 42, 0.025);
+    }
+  }
+  @keyframes fadeInShadowDark {
+    100% {
+      box-shadow:
+        0 20px 25px -5px rgba(2, 6, 23, 0.25),
+        0 8px 10px -6px rgba(2, 6, 23, 0.25);
+    }
+  }
+}
+
 /* Layout rules */
 html {
 	@apply scroll-smooth antialiased;
