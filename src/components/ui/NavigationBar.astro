@@ -151,13 +151,16 @@ const savedNavActions = navActions.map((action) => ({
 		@apply left-0 top-full hidden animate-dropdown rounded bg-secondary-300/10 px-4 lg:absolute lg:min-w-48 lg:rounded-t-none lg:bg-white/90 lg:p-0 lg:shadow-lg lg:shadow-neutral-700/5 lg:backdrop-blur-sm dark:bg-secondary-500/10 lg:dark:bg-secondary-900/90 lg:dark:shadow-neutral-950/50 [.header\_\_menu-item.open_&]:block;
 	}
 	.header__submenu-item {
-		@apply hidden [.header\_\_menu-item.open_&]:block;
+		@apply flex;
+	}
+	.header__menu-item.open > .header__submenu {
+		display: block;
 	}
 	.header__submenu-link {
 		@apply px-8 py-4 hover:text-primary-500 [.header\_\_menu-item.open_&]:flex;
 	}
 	.header__toggle {
-		@apply relative order-10 block h-10 w-10 self-center lg:hidden [&--open]:visible [&--open]:opacity-100;
+		@apply relative cursor-pointer order-10 block h-10 w-10 self-center lg:hidden [&--open]:visible [&--open]:opacity-100;
 	}
 	.header__toggle-inner {
 		@apply absolute left-1/2 top-1/2 w-6 -translate-x-1/2 -translate-y-1/2 transform;

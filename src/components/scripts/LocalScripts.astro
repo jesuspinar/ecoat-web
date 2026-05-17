@@ -1,43 +1,59 @@
-<!-- Scripts for UI components --><!-- Copyright (c) 2025 Oxygenna - MIT License -->
+<!-- Copyright (c) 2025 Oxygenna - MIT License -->
+<!-- Scripts for UI components -->
 <script async defer>
-	document.addEventListener('astro:page-load', () => {
-		// Menu Dropdown
-		const menuItems = document.querySelectorAll('.header__menu-item')
-		menuItems.forEach((menuItem) => {
-			const submenu = menuItem.querySelector('.header__submenu')
-			const link = menuItem.querySelector('.header__menu-link')
-
-			if (submenu && link) {
-				link.addEventListener('click', function (event) {
-					event.preventDefault()
-					menuItem.classList.toggle('open')
-				})
-			}
-		})
-		document.addEventListener('click', function (event) {
-			const target = event.target
-
-			menuItems.forEach((menuItem) => {
-				const submenu = menuItem.querySelector('.header__submenu')
-				if (submenu && !menuItem.contains(target)) {
-					menuItem.classList.remove('open')
-				}
-			})
-		})
-
-		// Menu toggle
-		const headerToggle = document.querySelector('.header__toggle')
-		const headerMenu = document.querySelector('.header__menu')
-		if (headerToggle && headerMenu) {
-			headerToggle.addEventListener('click', () => {
+	// Navigation — single delegated click handler for dropdown and mobile toggle
+	document.addEventListener('click', function (event) {
+		// Mobile menu toggle
+		if (event.target.closest('.header__toggle')) {
+			let headerToggle = document.querySelector('.header__toggle')
+			let headerMenu = document.querySelector('.header__menu')
+			if (headerToggle && headerMenu) {
 				headerToggle.classList.toggle('header__toggle--open')
-				const isExpanded = headerToggle.getAttribute('aria-expanded') === 'true'
-				const newExpandedValue = isExpanded ? 'false' : 'true'
-				headerToggle.setAttribute('aria-expanded', newExpandedValue)
+				let isExpanded = headerToggle.getAttribute('aria-expanded') === 'true'
+				headerToggle.setAttribute('aria-expanded', isExpanded ? 'false' : 'true')
 				headerMenu.classList.toggle('header__menu--open')
+			}
+			return
+		}
+
+		let menuItems = document.querySelectorAll('.header__menu-item')
+
+		function closeAll() {
+			menuItems.forEach(function (item) {
+				item.classList.remove('open')
+				let sub = item.querySelector('.header__submenu')
+				if (sub) sub.style.display = ''
 			})
 		}
 
+		// Submenu trigger
+		let trigger = event.target.closest('.header__menu-item > .header__menu-link')
+		if (trigger) {
+			let menuItem = trigger.closest('.header__menu-item')
+			let submenu = menuItem && menuItem.querySelector('.header__submenu')
+			if (menuItem && submenu) {
+				event.preventDefault()
+				let isOpen = menuItem.classList.contains('open')
+				closeAll()
+				if (!isOpen) {
+					menuItem.classList.add('open')
+					submenu.style.display = 'block'
+				}
+				return
+			}
+		}
+
+		// Close submenus on outside click
+		menuItems.forEach(function (menuItem) {
+			if (!menuItem.contains(event.target)) {
+				menuItem.classList.remove('open')
+				let sub = menuItem.querySelector('.header__submenu')
+				if (sub) sub.style.display = ''
+			}
+		})
+	})
+
+	document.addEventListener('astro:page-load', () => {
 		// Modals
 		function openModal(modal) {
 			if (modal && modal.classList.contains('modal')) {
