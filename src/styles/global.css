@@ -1,170 +1,182 @@
-/* Copyright (c) 2025 Oxygenna - MIT License */
+  /* Copyright (c) 2025 Oxygenna - MIT License */
 
-@import "tailwindcss";
+  @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+  @custom-variant dark (&:where(.dark, .dark *));
 
-@source inline("{lg:,}col-span-{1,2,3,4,5,6,7,8,9,10,11,12}");
-@source inline("{lg:,}h-{0,2,3,4,6,8,12,16,24,32}");
-@source inline("{lg:,}text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,8xl,9xl}");
-@source inline("font-{thin,extralight,light,normal,medium,semibold,bold,extrabold,black}");
-@source inline("text-{left,center,right}");
+  @source inline("{lg:,}col-span-{1,2,3,4,5,6,7,8,9,10,11,12}");
+  @source inline("{lg:,}h-{0,2,3,4,6,8,12,16,24,32}");
+  @source inline("{lg:,}text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,8xl,9xl}");
+  @source inline("font-{thin,extralight,light,normal,medium,semibold,bold,extrabold,black}");
+  @source inline("text-{left,center,right}");
 
-@theme {
-  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-headings: "Outfit Variable", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  @theme {
+    --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-headings: "Outfit Variable", ui-sans-serif, system-ui, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  --cursor-fancy: url(https://www.svgrepo.com/show/269/color-picker.svg);
+    --cursor-fancy: url(https://www.svgrepo.com/show/269/color-picker.svg);
 
-  --color-primary-50: #fffce6;
-  --color-primary-100: #fff8cc;
-  --color-primary-200: #fff099;
-  --color-primary-300: #ffe766;
-  --color-primary-400: #ffdf33;
-  --color-primary-500: #e0cb00;
-  --color-primary-600: #c2b200;
-  --color-primary-700: #a39900;
-  --color-primary-800: #857f00;
-  --color-primary-900: #686600;
-  --color-primary-950: #4c4c00;
+    --color-primary-50: #fffce6;
+    --color-primary-100: #fff8cc;
+    --color-primary-200: #fff099;
+    --color-primary-300: #ffe766;
+    --color-primary-400: #ffdf33;
+    --color-primary-500: #e0cb00;
+    --color-primary-600: #c2b200;
+    --color-primary-700: #a39900;
+    --color-primary-800: #857f00;
+    --color-primary-900: #686600;
+    --color-primary-950: #4c4c00;
 
-  --color-secondary-50: #e6ebec;
-  --color-secondary-100: #ccd7d9;
-  --color-secondary-200: #99afb3;
-  --color-secondary-300: #66878c;
-  --color-secondary-400: #40666f;
-  --color-secondary-500: #5d787f;
-  --color-secondary-600: #4e656a;
-  --color-secondary-700: #3f5255;
-  --color-secondary-800: #303f41;
-  --color-secondary-900: #212c2d;
-  --color-secondary-950: #14191a;
+    --color-secondary-50: #e6ebec;
+    --color-secondary-100: #ccd7d9;
+    --color-secondary-200: #99afb3;
+    --color-secondary-300: #66878c;
+    --color-secondary-400: #40666f;
+    --color-secondary-500: #5d787f;
+    --color-secondary-600: #4e656a;
+    --color-secondary-700: #3f5255;
+    --color-secondary-800: #303f41;
+    --color-secondary-900: #212c2d;
+    --color-secondary-950: #14191a;
 
-  --color-neutral-50: #f7f7f7;
-  --color-neutral-100: #eeeeee;
-  --color-neutral-200: #d1d5db;
-  --color-neutral-300: #a1a1aa;
-  --color-neutral-400: #737373;
-  --color-neutral-500: #525252;
-  --color-neutral-600: #404040;
-  --color-neutral-700: #2d2d2d;
-  --color-neutral-800: #1f1f1f;
-  --color-neutral-900: #0d0d0d;
+    --color-neutral-50: #f7f7f7;
+    --color-neutral-100: #eeeeee;
+    --color-neutral-200: #d1d5db;
+    --color-neutral-300: #a1a1aa;
+    --color-neutral-400: #737373;
+    --color-neutral-500: #525252;
+    --color-neutral-600: #404040;
+    --color-neutral-700: #2d2d2d;
+    --color-neutral-800: #1f1f1f;
+    --color-neutral-900: #0d0d0d;
 
-  --animate-dropdown: dropdown 300ms ease-in-out forwards;
-  --animate-fadeInShadowLight: fadeInShadowLight 500ms ease-in-out forwards;
-  --animate-fadeInShadowDark: fadeInShadowDark 500ms ease-in-out forwards;
+    --animate-dropdown: dropdown 300ms ease-in-out forwards;
+    --animate-fadeInShadowLight: fadeInShadowLight 500ms ease-in-out forwards;
+    --animate-fadeInShadowDark: fadeInShadowDark 500ms ease-in-out forwards;
 
-  @keyframes dropdown {
-    0% {
-      transform: translateY(-1rem);
-      opacity: 0;
+    @keyframes dropdown {
+      0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
+
+    @keyframes fadeInShadowLight {
+      100% {
+        box-shadow:
+          0 20px 25px -5px rgba(15, 23, 42, 0.025),
+          0 8px 10px -6px rgba(15, 23, 42, 0.025);
+      }
+    }
+
+    @keyframes fadeInShadowDark {
+      100% {
+        box-shadow:
+          0 20px 25px -5px rgba(2, 6, 23, 0.25),
+          0 8px 10px -6px rgba(2, 6, 23, 0.25);
+      }
     }
   }
-  @keyframes fadeInShadowLight {
-    100% {
-      box-shadow:
-        0 20px 25px -5px rgba(15, 23, 42, 0.025),
-        0 8px 10px -6px rgba(15, 23, 42, 0.025);
-    }
+
+  /* Layout rules */
+  html {
+    @apply scroll-smooth antialiased;
   }
-  @keyframes fadeInShadowDark {
-    100% {
-      box-shadow:
-        0 20px 25px -5px rgba(2, 6, 23, 0.25),
-        0 8px 10px -6px rgba(2, 6, 23, 0.25);
-    }
+
+  body {
+    @apply bg-white text-neutral-500 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-secondary-950 dark:text-neutral-300 in-[.dark]:text-neutral-300 in-[.light]:text-neutral-500;
   }
-}
 
-/* Layout rules */
-html {
-	@apply scroll-smooth antialiased;
-}
-body {
-	@apply bg-white text-neutral-500 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-secondary-950 dark:text-neutral-300 [.dark_&]:text-neutral-300 [.light_&]:text-neutral-500;
-}
+  /* Main typography */
+  p {
+    @apply mb-6 last:mb-0;
+  }
 
-/* Main typography */
-p {
-	@apply mb-6 last:mb-0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	@apply font-headings text-neutral-700 last:mb-0 dark:text-neutral-50 [&>strong]:text-primary-500 [.dark_&]:text-neutral-50 [.light_&]:text-neutral-700;
-}
-h1 strong,
-h2 strong,
-h3 strong,
-h4 strong,
-h5 strong,
-h6 strong {
-	font-weight: inherit;
-}
-h1,
-h2,
-h3 {
-	@apply mb-6 font-bold;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-headings text-neutral-700 last:mb-0 dark:text-neutral-50 [&>strong]:text-primary-500 in-[.dark]:text-neutral-50 in-[.light]:text-neutral-700;
+  }
 
-h4,
-h5,
-h6 {
-	@apply mb-4 font-semibold;
-}
+  h1 strong,
+  h2 strong,
+  h3 strong,
+  h4 strong,
+  h5 strong,
+  h6 strong {
+    font-weight: inherit;
+  }
 
-h1 {
-	@apply text-4xl lg:text-6xl;
-}
+  h1,
+  h2,
+  h3 {
+    @apply mb-6 font-bold;
+  }
 
-h2 {
-	@apply text-3xl lg:text-5xl;
-}
+  h4,
+  h5,
+  h6 {
+    @apply mb-4 font-semibold;
+  }
 
-h3 {
-	@apply text-2xl lg:text-3xl;
-}
+  h1 {
+    @apply text-4xl lg:text-6xl;
+  }
 
-h4 {
-	@apply text-xl lg:text-2xl;
-}
+  h2 {
+    @apply text-3xl lg:text-5xl;
+  }
 
-h5 {
-	@apply text-lg lg:text-xl;
-}
+  h3 {
+    @apply text-2xl lg:text-3xl;
+  }
 
-h6 {
-	@apply text-base lg:text-lg;
-}
-main a {
-	@apply text-primary-500 hover:text-primary-600;
-}
-.highlight {
-	@apply text-primary-500;
-}
-.small {
-	@apply text-sm font-normal text-neutral-400 dark:text-neutral-200;
-}
-/* Global basic styling */
-.basic-text {
-	@apply [&_blockquote]:relative [&_blockquote]:mb-6 [&_blockquote]:rounded [&_blockquote]:border [&_blockquote]:border-secondary-100 [&_blockquote]:bg-secondary-50 [&_blockquote]:p-6 [&_blockquote]:text-lg [&_blockquote]:leading-relaxed [&_blockquote]:text-neutral-700 [&_blockquote]:before:absolute [&_blockquote]:before:left-0 [&_blockquote]:before:top-0 [&_blockquote]:before:z-[0] [&_blockquote]:before:block [&_blockquote]:before:text-9xl [&_blockquote]:before:italic [&_blockquote]:before:text-neutral-200 [&_blockquote]:before:opacity-50 [&_blockquote]:before:content-['"'] lg:[&_blockquote]:-mx-12 dark:[&_blockquote]:border-secondary-600 dark:[&_blockquote]:bg-secondary-700 dark:[&_blockquote]:text-neutral-50 dark:[&_blockquote]:before:text-neutral-600 [&_blockquote_p]:relative [&_blockquote_p]:z-[1] [&_blockquote_p]:px-6 [&_h1:not(:first-child)]:mt-24 [&_h2:not(:first-child)]:mt-24 [&_h3:not(:first-child)]:mt-24 [&_h4:not(:first-child)]:mt-12 [&_img]:rounded [&_img]:border [&_img]:border-secondary-100 dark:[&_img]:border-secondary-600 [&_li]:mb-2 [&_li]:ml-4 [&_li]:list-disc [&_li]:marker:text-primary-500 lg:[&_p:has(img)]:-mx-12;
-}
-.basic-text--lg {
-	@apply text-lg leading-relaxed [&_blockquote]:text-xl [&_blockquote]:leading-loose;
-}
+  h4 {
+    @apply text-xl lg:text-2xl;
+  }
 
-/* Scroll animations */
-/* To disable scroll animations remove the class "sroll-animation" from root html in the layout file */
-.scroll-animation .col {
-	@apply translate-y-4 transform opacity-0 transition-all duration-1000 [&.scroll-animated]:translate-y-0 [&.scroll-animated]:opacity-100 [&:nth-child(1)]:delay-[50ms] [&:nth-child(10)]:delay-[725ms] [&:nth-child(11)]:delay-[800ms] [&:nth-child(12)]:delay-[875ms] [&:nth-child(2)]:delay-[125ms] [&:nth-child(3)]:delay-[200ms] [&:nth-child(4)]:delay-[275ms] [&:nth-child(5)]:delay-[350ms] [&:nth-child(6)]:delay-[425ms] [&:nth-child(7)]:delay-[500ms] [&:nth-child(8)]:delay-[575ms] [&:nth-child(9)]:delay-[650ms];
-}
+  h5 {
+    @apply text-lg lg:text-xl;
+  }
+
+  h6 {
+    @apply text-base lg:text-lg;
+  }
+
+  main a {
+    @apply text-primary-500 hover:text-primary-600;
+  }
+
+  .highlight {
+    @apply text-primary-500;
+  }
+
+  .small {
+    @apply text-sm font-normal text-neutral-400 dark:text-neutral-200;
+  }
+
+  /* Global basic styling */
+  .basic-text {
+    @apply [&_blockquote]:relative [&_blockquote]:mb-6 [&_blockquote]:rounded [&_blockquote]:border [&_blockquote]:border-secondary-100 [&_blockquote]:bg-secondary-50 [&_blockquote]:p-6 [&_blockquote]:text-lg [&_blockquote]:leading-relaxed [&_blockquote]:text-neutral-700 [&_blockquote]:before:absolute [&_blockquote]:before:left-0 [&_blockquote]:before:top-0 [&_blockquote]:before:z-0 [&_blockquote]:before:block [&_blockquote]:before:text-9xl [&_blockquote]:before:italic [&_blockquote]:before:text-neutral-200 [&_blockquote]:before:opacity-50 [&_blockquote]:before:content-['"'] lg:[&_blockquote]:-mx-12 dark:[&_blockquote]:border-secondary-600 dark:[&_blockquote]:bg-secondary-700 dark:[&_blockquote]:text-neutral-50 dark:[&_blockquote]:before:text-neutral-600 [&_blockquote_p]:relative [&_blockquote_p]:z-1 [&_blockquote_p]:px-6 [&_h1:not(:first-child)]:mt-24 [&_h2:not(:first-child)]:mt-24 [&_h3:not(:first-child)]:mt-24 [&_h4:not(:first-child)]:mt-12 [&_img]:rounded [&_img]:border [&_img]:border-secondary-100 dark:[&_img]:border-secondary-600 [&_li]:mb-2 [&_li]:ml-4 [&_li]:list-disc [&_li]:marker:text-primary-500 lg:[&_p:has(img)]:-mx-12;
+  }
+
+  .basic-text--lg {
+    @apply text-lg leading-relaxed [&_blockquote]:text-xl [&_blockquote]:leading-loose;
+  }
+
+  /* Scroll animations */
+  /* To disable scroll animations remove the class "sroll-animation" from root html in the layout file */
+  .scroll-animation .col {
+    @apply translate-y-4 transform opacity-0 transition-all duration-1000 [&.scroll-animated]:translate-y-0 [&.scroll-animated]:opacity-100 nth-1:delay-50 nth-10:delay-725 nth-11:delay-800 nth-12:delay-875 nth-2:delay-125 nth-3:delay-200 nth-4:delay-275 nth-5:delay-350 nth-6:delay-425 nth-7:delay-500 nth-8:delay-575 nth-9:delay-650;
+  }
